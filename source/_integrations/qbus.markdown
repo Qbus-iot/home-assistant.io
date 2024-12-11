@@ -3,8 +3,6 @@ title: Qbus
 description: Instructions on how to integrate your Qbus installation with Home Assistant.
 ha_category:
   - Switch
-ha_platforms:
-  - binary_sensor
 ha_iot_class: Local Push
 ha_codeowners:
   - '@Qbus-iot'
@@ -13,7 +11,7 @@ ha_release: 2024.12
 ha_domain: qbus
 ha_platforms:
   - switch
-ha_integration_type: hub
+ha_integration_type: device
 ha_config_flow: true
 ---
 
@@ -40,7 +38,7 @@ There is currently support for the following **Qbus** products within Home Assis
 
 ## Available entities
 
-- **Binary sensors**: toggles Bistable outputs on relay modules.
+- **Switch**: toggles Bistable outputs on relay modules.
 
 ## Removing the integration
 
@@ -58,15 +56,15 @@ The integration does not provide a way to update the firmware on the devices. Th
 
 ## Troubleshooting
 
-### Can’t setup the device
+### Can’t set up the device
 
 #### Symptom: "No devices are discovered"
 
-When trying to setup the integration, no devices are discovered.
+When trying to set up the integration, no devices are discovered.
 
 ##### Description
 
-This means that the integration did not received a valid configuration from the gateway.
+This means that the integration did not receive a valid configuration from the gateway.
 
 ##### Resolution
 
@@ -74,5 +72,5 @@ To resolve this issue, try the following steps:
 
 1. Make sure your controller is online and not connected to System Manager.
 2. Make sure you have a MQTT broker running.
-3. Make sure that the gateway software is up and running (see [Qbus MQTT Gateway documentation](https://github.com/Qbus-iot/qbus-mqttgw)) and connected to the broker.
-4. Make sure you have a MQTT client integration (see [Qbus MQTT Gateway documentation](https://github.com/Qbus-iot/qbus-mqttgw)) connected to the broker.
+3. Make sure that the gateway software is up and running (see Prerequisites) and connected to the broker.
+4. Make sure you have a MQTT client integration (see Prerequisites) connected to the broker.
