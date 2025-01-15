@@ -35,6 +35,7 @@ There is currently support for the following **Qbus** products within Home Assis
 
 - **CTD 3.0**: main controller.
 - **CTD 3.5**: main controller.
+- **Toggle**: Toggle outputs on controllers.
 
 ## Available entities
 
