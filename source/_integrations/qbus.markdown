@@ -72,5 +72,5 @@ To resolve this issue, try the following steps:
 
 1. Make sure your controller is online and not connected to System Manager.
 2. Make sure you have an MQTT broker running.
-3. Make sure that the gateway software is up and running (see Prerequisites) and connected to the broker.
-4. Make sure you have an MQTT client integration (see Prerequisites) connected to the broker.
+3. Make sure that the gateway software is up and running (see [Prerequisites](#prerequisites)) and connected to the broker.
+4. Make sure you have an MQTT client integration (see [Prerequisites](#prerequisites)) connected to the broker.
