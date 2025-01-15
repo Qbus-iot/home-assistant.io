@@ -23,7 +23,7 @@ This integration communicates with a **Qbus** controller over an MQTT server.
 
 The controllers cannot communicate directly with MQTT. Therefore, you need to install the Qbus gateway before enabling this integration. The Qbus gateway is a software tool that runs on all Linux platforms. It can be installed by running a script or a Docker container. For detailed instructions, please refer to the [Qbus MQTT Gateway documentation](https://github.com/Qbus-iot/qbus-mqttgw).
 
-We also host a site which contains a [Manual](https://iot.qbus.be/) where you can find lots of information to set up Home Assistant with a **Qbus** controller (currently only available in Dutch, with translations planned for the future).
+For information on setting up Home Assistant with a **Qbus** controller, refer to the [Qbus documentation](https://iot.qbus.be/). The documentation is currently only available in Dutch, but translations are planned for the future.
 
 When you have your controller connected to the MQTT Server, you need to set up an MQTT client in Home Assistant to enable communication between Home Assistant and your **Qbus** system. This client should connect to the same MQTT Server as your Qbus controller. For detailed instructions, refer to the [MQTT integration documentation](https://www.home-assistant.io/integrations/mqtt/).
 
